@@ -27,11 +27,10 @@ ventas.json referencia a productos.json mediante el campo id dentro del arreglo 
 ***Rutas***
 
 GET
-/productos --> devuelve todos los productos
-/productos/:desde/:hasta --> devuelve los productos en el rango de precios 
+/productos?categoria="categoria" --> devuelve todos los productos o lo pertenecientes a la categoria
 
 POST
-/cargarUsuario --> carga un nuevo usuario
+/usuarios/registrar --> carga un nuevo usuario
 JSON --> {  "nombre": "",
             "apellido": "",
             "email": "",
@@ -43,13 +42,10 @@ JSON --> {
             "contrasena": ""
          }
 
-PUT
-/productos/actualizarprecio --> actuliza el precio de un producto
+/ventas --> carga de venta
 JSON --> {
-            id: ,
-            precio: 
-         }
-
-DELETE
-/productos/eliminar/:id --> elimina el producto con ese id. Solo lo hace si el producto existe
-                            y ademas no hay ventas pendiente de entrega con ese producto.
+            "id_usuario": "",
+            "total": "",
+            "direccion": "",
+            "productos": []
+          }

@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "titulo": "Campera de algodón para hombre",
+    "precio": 55.99,
+    "descripcion": "Campera de algodón ideal para el invierno.",
+    "categoria": "Ropa de Hombre",
+    "imagen": "https://m.media-amazon.com/images/I/71li-ujtlUL._AC_UX679_.jpg",
+    "stock": 100,
+    "rating": { "tasa": 4.7, "cantidad": 500 }
+  },
+  {
+    "id": 2,
+    "titulo": "Remera ajustada premium",
+    "precio": 22.3,
+    "descripcion": "Remera de algodón ajustada de alta calidad.",
+    "categoria": "Ropa de Hombre",
+    "imagen": "https://m.media-amazon.com/images/I/71YXzeOuslL._AC_UY879_.jpg",
+    "stock": 150,
+    "rating": { "tasa": 4.1, "cantidad": 430 }
+  },
+  {
+    "id": 3,
+    "titulo": "Camisa casual de lino",
+    "precio": 35.0,
+    "descripcion": "Camisa de lino fresca para el verano.",
+    "categoria": "Ropa de Hombre",
+    "imagen": "https://www.devre.la/media/catalog/product/d/e/devre-camisa-sport_42d000333-017_001.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=1350&width=900&canvas=900:1350",
+    "stock": 80,
+    "rating": { "tasa": 4.5, "cantidad": 320 }
+  },
+  {
+    "id": 4,
+    "titulo": "Pantalón chino beige",
+    "precio": 40.0,
+    "descripcion": "Pantalón chino color beige, ideal para ocasiones casuales.",
+    "categoria": "Ropa de Hombre",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHsTh1B5vMpuVpQZVMPuDVJUqnX4Crcy2Z7g&s",
+    "stock": 120,
+    "rating": { "tasa": 4.3, "cantidad": 280 }
+  },
+  {
+    "id": 5,
+    "titulo": "Buzo con capucha gris",
+    "precio": 30.0,
+    "descripcion": "Buzo con capucha color gris, cómodo y abrigado.",
+    "categoria": "Ropa de Hombre",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVAVssItzbzkU0COENGeCR6aC-Kg7-a1Lg-A&s",
+    "stock": 200,
+    "rating": { "tasa": 4.6, "cantidad": 350 }
+  },
+  {
+    "id": 6,
+    "titulo": "Campera de cuero negra",
+    "precio": 120.0,
+    "descripcion": "Campera de cuero auténtico color negro.",
+    "categoria": "Ropa de Hombre",
+    "imagen": "https://briganti.com.ar/cdn/shop/files/HMCP09539011-01.jpg?v=1721656302",
+    "stock": 50,
+    "rating": { "tasa": 4.8, "cantidad": 200 }
+  },
+  {
+    "id": 7,
+    "titulo": "Remera estampada vintage",
+    "precio": 25.0,
+    "descripcion": "Remera con estampado vintage de los 80s.",
+    "categoria": "Ropa de Hombre",
+    "imagen": "https://acdn-us.mitiendanube.com/stores/906/459/products/vintage70s-db402352d009dc776d17074014032634-1024-1024.jpg",
+    "stock": 180,
+    "rating": { "tasa": 4.2, "cantidad": 150 }
+  },
+  {
+    "id": 8,
+    "titulo": "Short deportivo azul",
+    "precio": 20.0,
+    "descripcion": "Short deportivo color azul, ideal para entrenamientos.",
+    "categoria": "Ropa de Hombre",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqWXP3fKxk5cm6hybXoalmmM8L-MM0RLcqGQ&s",
+    "stock": 250,
+    "rating": { "tasa": 4.4, "cantidad": 180 }
+  },
+  {
+    "id": 9,
+    "titulo": "Camisa de franela roja",
+    "precio": 35.0,
+    "descripcion": "Camisa de franela color rojo, estilo leñador.",
+    "categoria": "Ropa de Hombre",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5gr02uq17xWkPAv0pHQfsJg_oPcqrrNTG0w&s",
+    "stock": 90,
+    "rating": { "tasa": 4.5, "cantidad": 220 }
+  },
+  {
+    "id": 10,
+    "titulo": "Pantalón cargo verde oliva",
+    "precio": 45.0,
+    "descripcion": "Pantalón cargo color verde oliva, con múltiples bolsillos.",
+    "categoria": "Ropa de Hombre",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCYVUW_B0m5L15A2ixxNmfi1wH5HitV15oqA&s",
+    "stock": 110,
+    "rating": { "tasa": 4.3, "cantidad": 190 }
+  },
+  {
+    "id": 11,
+    "titulo": "Vestido floral verano",
+    "precio": 45.0,
+    "descripcion": "Vestido con estampado floral, ideal para verano.",
+    "categoria": "Ropa de Mujer",
+    "imagen": "https://i.pinimg.com/736x/1b/42/c4/1b42c4d30a71c95745df8ccda69d3c03.jpg",
+    "stock": 130,
+    "rating": { "tasa": 4.7, "cantidad": 250 }
+  },
+  {
+    "id": 12,
+    "titulo": "Blusa de encaje blanca",
+    "precio": 30.0,
+    "descripcion": "Blusa de encaje delicada y femenina.",
+    "categoria": "Ropa de Mujer",
+    "imagen": "https://d22fxaf9t8d39k.cloudfront.net/a71ace170a773306bab4c8ec9c8d852f3b518d98ce0432fcf8f7b8a0ccf7817f254500.jpg",
+    "stock": 160,
+    "rating": { "tasa": 4.6, "cantidad": 190 }
+  },
+  {
+    "id": 13,
+    "titulo": "Falda plisada rosa",
+    "precio": 35.0,
+    "descripcion": "Falda plisada color rosa, estilo elegante.",
+    "categoria": "Ropa de Mujer",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKRcsplxqMPmHUxvSxJKHtSA6vIQqO-eBt0w&s",
+    "stock": 70,
+    "rating": { "tasa": 4.4, "cantidad": 180 }
+  },
+  {
+    "id": 14,
+    "titulo": "Remera manga corta básica",
+    "precio": 10.0,
+    "descripcion": "Remera de manga corta, cómoda para el día a día.",
+    "categoria": "Ropa de Mujer",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhnlAV693mERdbX_w28x8Mgi6CBTiauuDBDg&s",
+    "stock": 300,
+    "rating": { "tasa": 4.2, "cantidad": 210 }
+  },
+  {
+    "id": 15,
+    "titulo": "Camisa de seda formal",
+    "precio": 50.0,
+    "descripcion": "Camisa de seda para ocasiones especiales.",
+    "categoria": "Ropa de Mujer",
+    "imagen": "https://i.pinimg.com/474x/f5/aa/8e/f5aa8ed6d212198ceea7ea78a1f2c4c2.jpg",
+    "stock": 60,
+    "rating": { "tasa": 4.5, "cantidad": 230 }
+  },
+  {
+    "id": 16,
+    "titulo": "Short de lino beige",
+    "precio": 25.0,
+    "descripcion": "Short de lino fresco, ideal para el calor.",
+    "categoria": "Ropa de Mujer",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqg9X6kp7MerWSPSKAYMFPD7DGP_ljsVGwwA&s",
+    "stock": 140,
+    "rating": { "tasa": 4.3, "cantidad": 160 }
+  },
+  {
+    "id": 17,
+    "titulo": "Camisa a rayas azul",
+    "precio": 35.0,
+    "descripcion": "Camisa azul a rayas, cómoda y moderna.",
+    "categoria": "Ropa de Mujer",
+    "imagen": "https://julio.com/media/catalog/product/2/4/240761_01.jpg?quality=80&bg-color=255,255,255&height=638&width=508&canvas=508:638",
+    "stock": 95,
+    "rating": { "tasa": 4.4, "cantidad": 180 }
+  },
+  {
+    "id": 18,
+    "titulo": "Pantalón palazzo negro",
+    "precio": 40.0,
+    "descripcion": "Pantalón palazzo elegante y holgado.",
+    "categoria": "Ropa de Mujer",
+    "imagen": "https://acdn-us.mitiendanube.com/stores/001/073/451/products/dsc_1836-copia-ok-tienda-5bfa982d8f868b7b8617279803160303-1024-1024.jpg",
+    "stock": 85,
+    "rating": { "tasa": 4.3, "cantidad": 170 }
+  },
+  {
+    "id": 19,
+    "titulo": "Sweater de lana gris",
+    "precio": 55.0,
+    "descripcion": "Sweater tejido de lana suave y abrigado.",
+    "categoria": "Ropa de Mujer",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1LL_najwjlA9x1tIGiyDhPg37tG92HWxDXg&s",
+    "stock": 75,
+    "rating": { "tasa": 4.6, "cantidad": 140 }
+  },
+  {
+    "id": 20,
+    "titulo": "Campera de jean clásica",
+    "precio": 60.0,
+    "descripcion": "Campera de jean azul de corte clásico.",
+    "categoria": "Ropa de Mujer",
+    "imagen": "https://acdn-us.mitiendanube.com/stores/001/163/139/products/whatsapp-image-2023-09-18-at-17-47-531-1fb18e07b14e033aea16950707955703-1024-1024.jpeg",
+    "stock": 100,
+    "rating": { "tasa": 4.5, "cantidad": 220 }
+  },
+  {
+    "id": 21,
+    "titulo": "Smartwatch Samsung Galaxy Watch 5",
+    "precio": 239.99,
+    "descripcion": "Reloj inteligente Samsung Galaxy Watch 5, con GPS y monitor de salud.",
+    "categoria": "Electrónica",
+    "imagen": "https://images.fravega.com/f500/10d3f92f270453d73243575856fb369d.jpg",
+    "stock": 40,
+    "rating": { "tasa": 4.7, "cantidad": 350 }
+  },
+  {
+    "id": 22,
+    "titulo": "Auriculares inalámbricos Sony WH-1000XM5",
+    "precio": 348.0,
+    "descripcion": "Auriculares Sony con cancelación activa de ruido líder en el mercado.",
+    "categoria": "Electrónica",
+    "imagen": "https://m.media-amazon.com/images/I/71o8Q5XJS5L._AC_SX679_.jpg",
+    "stock": 60,
+    "rating": { "tasa": 4.8, "cantidad": 420 }
+  },
+  {
+    "id": 23,
+    "titulo": "iPhone 14 Pro Max",
+    "precio": 1099.0,
+    "descripcion": "Smartphone iPhone 14 Pro Max con 256GB, cámara triple.",
+    "categoria": "Electrónica",
+    "imagen": "https://m.media-amazon.com/images/I/71T5NVOgbpL._AC_SX679_.jpg",
+    "stock": 30,
+    "rating": { "tasa": 4.9, "cantidad": 500 }
+  },
+  {
+    "id": 24,
+    "titulo": "Laptop Dell XPS 13",
+    "precio": 999.0,
+    "descripcion": "Laptop ultraligera Dell XPS 13 con procesador Intel i7.",
+    "categoria": "Electrónica",
+    "imagen": "https://http2.mlstatic.com/D_992974-MLA81208580623_122024-O.jpg",
+    "stock": 25,
+    "rating": { "tasa": 4.7, "cantidad": 300 }
+  },
+  {
+    "id": 25,
+    "titulo": "Tablet Samsung Galaxy Tab S8",
+    "precio": 699.0,
+    "descripcion": "Tablet Samsung con pantalla AMOLED de 11 pulgadas.",
+    "categoria": "Electrónica",
+    "imagen": "https://images.samsung.com/is/image/samsung/p6pim/ar/sm-x800nzavaro/gallery/ar-galaxy-tab-s8-plus-wifi-x800-sm-x800nzavaro-thumb-534298552?$UX_EXT2_PNG$",
+    "stock": 50,
+    "rating": { "tasa": 4.6, "cantidad": 210 }
+  },
+  {
+    "id": 26,
+    "titulo": "Smart TV LG OLED 55",
+    "precio": 1299.0,
+    "descripcion": "Televisor LG OLED 4K UHD de 55 pulgadas.",
+    "categoria": "Electrónica",
+    "imagen": "https://www.lg.com/ar/images/televisores/md06037396/gallery/medium11.jpg",
+    "stock": 20,
+    "rating": { "tasa": 4.8, "cantidad": 400 }
+  },
+  {
+    "id": 27,
+    "titulo": "Monitor curvo Samsung 32 pulgadas",
+    "precio": 329.0,
+    "descripcion": "Monitor Samsung curvo Full HD de 32 pulgadas.",
+    "categoria": "Electrónica",
+    "imagen": "https://images.samsung.com/is/image/samsung/es-curved-cf391-lc32f391fwuxen-001-front-white",
+    "stock": 45,
+    "rating": { "tasa": 4.7, "cantidad": 270 }
+  },
+  {
+    "id": 28,
+    "titulo": "Cámara GoPro HERO11 Black",
+    "precio": 499.0,
+    "descripcion": "Cámara de acción GoPro HERO11 Black con grabación 5.3K.",
+    "categoria": "Electrónica",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsueCE2RAW2aVYB0fT3LbUjrlGIud8-u5CWQ&s",
+    "stock": 35,
+    "rating": { "tasa": 4.8, "cantidad": 320 }
+  },
+  {
+    "id": 29,
+    "titulo": "Disco externo WD 2TB",
+    "precio": 64.0,
+    "descripcion": "Disco duro portátil WD Elements de 2TB USB 3.0.",
+    "categoria": "Electrónica",
+    "imagen": "https://mla-s1-p.mlstatic.com/871340-MLA31093161996_062019-F.jpg",
+    "stock": 150,
+    "rating": { "tasa": 4.7, "cantidad": 350 }
+  },
+  {
+    "id": 30,
+    "titulo": "Auriculares Apple AirPods Pro (2da generación)",
+    "precio": 249.0,
+    "descripcion": "Auriculares Apple AirPods Pro 2, con cancelación de ruido.",
+    "categoria": "Electrónica",
+    "imagen": "https://m.media-amazon.com/images/I/61f1YfTkTDL._AC_SX679_.jpg",
+    "stock": 100,
+    "rating": { "tasa": 4.9, "cantidad": 450 }
+  }
+]

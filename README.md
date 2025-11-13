@@ -48,13 +48,9 @@ ventas.json referencia a productos.json mediante el campo id dentro del arreglo 
             # Secreto para firmar tokens (JWT)           
             SECRET=tu_palabra_secreta_muy_segura
 
-3- (Opcional) Ejecuta el comando "npm run seed" para completar la base de datos con datos de prueba que estan en los archivos JSON en la carpeta 'Data'.
+3- (Opcional) Ejecuta el comando "npm run seed" para completar la base de datos con productos que estan en el archivos JSON en la carpeta 'Data'.
 
 4- Ejecutar "npm run dev" para iniciar el servidor. El puerto de especifica en la consola.
-
-**Si ejecutaste el punto 3 para ingresar puedes utilizar el siguiente usuario**
-Email: juan@gmail.com
-Contrasena: juan1234
 
 ***Rutas***
 

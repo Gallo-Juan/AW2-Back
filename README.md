@@ -6,8 +6,8 @@ Este repositorio contiene datos en formato JSON para un sistema ficticio de e-co
 
 * Gestión de productos con filtrado por categoría.
 * Sistema de registro y autenticación de usuarios (Login).
-* Registro y consulta de ventas.
-* Base de datos poblada con datos de ejemplo (seeding).
+* Registro de ventas.
+* Base de datos poblada con datos de ejemplo.
 
 ## 📋 Requisitos Previos
 

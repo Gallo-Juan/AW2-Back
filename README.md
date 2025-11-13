@@ -81,3 +81,6 @@ JSON --> {
             "direccion": "",
             "productos": []
           }
+
+
+**Este proyecto esta hecho para utilizarse junto con https://github.com/Gallo-Juan/AW2-Front**

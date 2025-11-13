@@ -37,6 +37,7 @@ ventas.json referencia a productos.json mediante el campo id dentro del arreglo 
 2- Ejecutar el comando "npm i" en la ubicacion del proyecto.
 
 3- Crea un archivo .env en la raiz del proyecto y completalo con lo siguiente:
+           
             # Puerto del servidor (ej. 8080)
             PORT=8080
 

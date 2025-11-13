@@ -1,73 +1,74 @@
 import { Router } from "express";
-import {readFile, writeFile} from "fs/promises"
+import { buscarUsuario, createUsu } from "../DB/actions/usuarios.action.js";
+import bcrypt from "bcryptjs";
+import jwt from 'jsonwebtoken';
 
 const router=Router()
 
-const fileUsuarios = await readFile('./Data/usuarios.json', 'utf-8')
-const usuariosData=JSON.parse(fileUsuarios)
-
-router.post('/registrar',(req,res)=>{
-try{
-    const nombre=req.body.nombre
-    const apellido=req.body.apellido
-    const email=req.body.email
-    const contrasena=req.body.contrasena
-
+router.post('/registro',async (req,res)=>{
+    const {nombre, apellido, email, contrasena}=req.body
+    
     if(!nombre || !apellido || !email || !contrasena){
         return res.status(400).json({message: 'Falta completar campos'})
-    }
+    } 
 
-    const usuarioExiste = usuariosData.find(u => u.email === email);
+    try{
+        const hashedPass=bcrypt.hashSync(contrasena,8) 
 
-    if(usuarioExiste){
-        return res.status(409).json({message:'Ya existe un usuario con ese Email'})
-    }
+        const result=await createUsu({nombre,apellido,email,contrasena: hashedPass})
 
-    const ultimoUsuario = usuariosData[usuariosData.length - 1];
-
-    const nuevoId = ultimoUsuario ? ultimoUsuario.id + 1 : 1;
-
-    const nuevoUsuario={
-        id: nuevoId,
-        nombre,
-        apellido,
-        email,
-        contrasena
-    }
-
-    usuariosData.push(nuevoUsuario)
-    writeFile('./Data/usuarios.json', JSON.stringify(usuariosData,null,2), 'utf-8')
-
-    res.status(200).json({ message: "Usuario registrado con éxito" });
+        res.status(200).json(result);
 } catch (error) {
-        // 3. Si ocurre CUALQUIER error en el bloque 'try' (incluido un fallo en writeFile),
-        //    el código salta directamente a esta línea.
+        
         console.error("Ocurrió un error:", error);
         res.status(400).json({ message: "Ha ocurrido un error" });
     }
 })
 
-router.post('/login', (req,res)=>{
-    try{
-
-    const email = req.body.email;
-    const contrasena=req.body.contrasena
+router.post('/login', async (req, res) => { 
+       
+    const { email, contrasena } = req.body; 
 
     if (!email || !contrasena) {
-        return res.status(400).json({ error: "Faltan datos obligatorios" });
+            return res.status(400).json({ message: "Email y contraseña son obligatorios" });
+        }
+
+    const result=await buscarUsuario({email})
+
+    if(!result){
+        return res.status(404).send({status:false})
     }
 
-    // Buscar usuario que coincida con email y contraseña
-    const usuario = usuariosData.find(e => e.email === email && e.contrasena === contrasena);
+    const controlPass=bcrypt.compareSync(contrasena,result.contrasena)
 
-    if (usuario) {
-        res.status(200).json({id:usuario.id,nombre:usuario.nombre, apellido:usuario.apellido, email:usuario.email})
-    }else{
-         res.status(400).json({ error: "Email o contraseña incorrectos" });
+    if(!controlPass){
+        return res.status(401).send({status:false})        
     }
-}catch(error){
-    res.status(400).json({message:"Ha ocurrido un error"})
-}
-})
+
+    const tokenPayload = {
+            id: result._id,
+            nombre: result.nombre,
+            apellido: result.apellido,
+            email: result.email            
+        };
+
+       
+        const token = jwt.sign(
+            tokenPayload, 
+            process.env.SECRET, 
+            { expiresIn: 86400 } 
+        );
+    
+    res.status(200).json({
+            status: true,
+            token: token,
+            nombre: result.nombre,
+            apellido: result.apellido,
+            email: result.email,
+            id: result._id
+        });
+
+     
+});
 
 export default router

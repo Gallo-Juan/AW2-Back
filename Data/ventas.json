@@ -430,5 +430,20 @@
       "1"
     ],
     "entregado": false
+  },
+  {
+    "id": 41,
+    "id_usuario": "6911f96f6108f04c109dae00",
+    "fecha": "11/11/2025",
+    "total": 55.99,
+    "direccion": "Santa Fe 123",
+    "productos": [
+      {
+        "producto": "69122209569dccfc7013f370",
+        "cantidad": 1,
+        "precio": 1500
+      }
+    ],
+    "entregado": false
   }
 ]

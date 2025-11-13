@@ -1,28 +1,26 @@
 import { Router } from "express";
-import {readFile, writeFile} from "fs/promises"
+import { TraerPorCategoria, TraerTodos } from "../DB/actions/productos.actions.js";
 
 const router=Router()
 
-const fileProductos = await readFile('./Data/productos.json', 'utf-8')
-const productosData=JSON.parse(fileProductos)
-
-router.get('/',(req,res)=>{
+router.get('/traertodos',async(req,res)=>{
     try{
-
-        const { categoria } = req.query;
-
-        if(!categoria){
-            res.status(200).json(productosData)
-        }else{
-            const productosFiltrados=productosData.filter(p=>p.categoria==categoria)
-             res.status(200).json(productosFiltrados)
-        }
-        
+        const result=await TraerTodos()
+        res.status(200).json(result)
     }catch(error){
-        res.status(400).json({Message:'Ha ocurrido un error'})
+        res.status(400).json('Ocurrio un error al traer los productos: '+error)
     }
 })
 
+router.get('/traer/:categoria', async(req,res)=>{
+    const cate=req.params.categoria
+    try{
+        const result=await TraerPorCategoria(cate)
+        res.status(200).json(result)
+    }catch(error){
+        res.status(400).json('Ocurrio un error al traer los productos: '+error)
+    }
+})
 
 
 export default router

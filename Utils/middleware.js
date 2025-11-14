@@ -1,20 +1,34 @@
-export const verifyToken=async(token)=>{
-    if(!token){
-        return false
+import jwt from 'jsonwebtoken';
+import 'dotenv/config';
+
+const SECRET = process.env.SECRET; 
+
+
+export const verifyToken = async (req, res, next) => {
+    
+   
+    const authHeader = req.headers['authorization'];
+    
+    const token = authHeader && authHeader.split(' ')[1];
+
+    if (!token) {
+        return res.status(401).json({ 
+            message: 'Acceso denegado. Se requiere un token.' 
+        });
     }
 
-    try{
-        const decode=await jwt.verify(token,SECRET)
-        return true
-    }catch(error){
-        return false
+    try {  const decode = await jwt.verify(token, SECRET);
+
+          req.usuario = decode; 
+
+        next();
+
+    } catch (error) {
+        return res.status(400).json({ 
+            message: 'Token inválido o expirado.' 
+        });
     }
 }
 
-export const decodeToken=async(token)=>{
-    if(!verifiyToken){
-        return false
-    }
-    const decode=await jwt.verify(token,SECRET)
-    return decode
-}
+// Ya no necesitas las funciones 'decodeToken' o la 'verifyToken' original.
+// Esta única función 'verificarToken' hace todo el trabajo.
